@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.boot.dao.UserDAO">
+
+    <!-- 회원가입 -->
+    <insert id="join" parameterType="com.boot.dto.Mypet_UserDTO">
+        INSERT INTO user_info (
+        user_no, user_id, user_pwd, user_name, user_gender,
+        user_birthday, user_phone, user_email, user_addr,
+        user_status, user_img, user_img_temp
+        ) VALUES (
+        SEQ_USER_NO.NEXTVAL,
+        #{user_id, jdbcType=VARCHAR},
+        #{user_pwd, jdbcType=VARCHAR},
+        #{user_name, jdbcType=VARCHAR},
+        #{user_gender, jdbcType=CHAR},
+        #{user_birthday, jdbcType=DATE},
+        #{user_phone, jdbcType=VARCHAR},
+        #{user_email, jdbcType=VARCHAR},
+        #{user_addr, jdbcType=VARCHAR},
+        #{user_status, jdbcType=VARCHAR},
+        #{user_img, jdbcType=VARCHAR},
+        #{user_img_temp, jdbcType=VARCHAR}
+        )
+    </insert>
+
+    <!-- 로그인 -->
+    <select id="loginFindNo" parameterType="hashmap" resultType="int">
+        SELECT user_no AS no
+        FROM user_info
+        WHERE user_id = #{user_id}
+        AND user_pwd = #{user_pwd}
+        AND user_status = 'ACTIVE'
+        UNION ALL
+        SELECT admin_no AS no
+        FROM admin_info
+        WHERE admin_id = #{user_id}
+        AND admin_pwd = #{user_pwd}
+    </select>
+
+    <select id="selectUserByNo" parameterType="int"
+        resultType="com.boot.dto.Mypet_UserDTO">
+
+    SELECT 
+        user_no,
+        user_id,
+        user_pwd,
+        user_name,
+        user_gender,
+        user_birthday,
+        user_phone,
+        user_email,
+        user_regidate,
+        user_addr,
+        user_status,
+        user_img,
+        user_img_temp,
+        social_type,
+        social_id,
+        current_grade AS current_grade,
+        grade_expiry_date AS grade_expiry_date
+    FROM user_info
+    WHERE user_no = #{no}
+
+	</select>
+
+
+    <!-- 관리자 조회 -->
+    <select id="selectAdminByNo" parameterType="int"
+            resultType="com.boot.dto.Mypet_AdminDTO">
+        SELECT * FROM admin_info WHERE admin_no = #{no}
+    </select>
+
+    <!-- 유저 정보 수정 -->
+    <update id="updateUserInfo" parameterType="hashmap">
+    UPDATE user_info
+    <set>
+        
+        <!-- 비밀번호 선택적 수정 -->
+        <if test="user_pwd != null and user_pwd != ''">
+            user_pwd = #{user_pwd},
+        </if>
+
+        user_name = #{user_name},
+        user_phone = #{user_phone},
+        user_email = #{user_email},
+        user_addr = #{user_addr},
+        user_addr_detail = #{user_addr_detail},
+        user_img = #{user_img}
+    </set>
+    WHERE user_no = #{user_no}
+</update>
+
+
+    <!-- 이미지 중복 검사 -->
+    <select id="checkDuplicateUserImage" parameterType="string" resultType="int">
+        SELECT COUNT(*) FROM user_info WHERE user_img_temp = #{img_temp}
+    </select>
+
+    <!-- 유저 이미지 업데이트 -->
+    <update id="updateUserImage" parameterType="hashmap">
+        UPDATE user_info
+        SET user_img = #{user_img},
+        user_img_temp = #{user_img_temp}
+        WHERE user_no = #{user_no}
+    </update>
+    
+<!--    아이디 찾기 기능-->
+	<select id="findAccount" resultType="com.boot.dto.FindAccountDTO">
+	    SELECT 
+	        USER_ID AS account_id,
+	        USER_EMAIL as account_email,
+	        USER_PHONE AS account_phone
+	    FROM USER_INFO
+	    WHERE USER_EMAIL = #{account_email}
+	      AND REPLACE(USER_PHONE, '-', '') = #{account_phone}
+	
+	    UNION ALL
+	
+	    SELECT 
+	        ADMIN_ID AS account_id,
+	        ADMIN_EMAIL as account_email,
+	        ADMIN_PHONE AS account_phone
+	    FROM ADMIN_INFO
+	    WHERE ADMIN_EMAIL = #{account_email}
+	      AND REPLACE(ADMIN_PHONE, '-', '') = #{account_phone}
+	</select>
+	
+	
+<!--	비밀번호 찾기 기능-->
+	<select id="findPW" resultType="com.boot.dto.FindAccountDTO">
+	    SELECT 
+	        USER_ID AS account_id,
+	        USER_EMAIL AS account_email,
+	        USER_PHONE AS account_phone
+	    FROM USER_INFO
+	    WHERE USER_EMAIL = #{account_email}
+	      AND REPLACE(USER_PHONE, '-', '') = #{account_phone}
+	      AND USER_ID = #{account_id}
+	
+	    UNION ALL
+	
+	    SELECT 
+	        ADMIN_ID AS account_id,
+	        ADMIN_EMAIL AS account_email,
+	        ADMIN_PHONE AS account_phone
+	    FROM ADMIN_INFO
+	    WHERE ADMIN_EMAIL = #{account_email}
+	      AND REPLACE(ADMIN_PHONE, '-', '') = #{account_phone}
+	      AND ADMIN_ID = #{account_id}
+	</select>
+
+	
+	
+	<update id="updateUserPwd">
+	    UPDATE USER_INFO
+	    SET USER_PWD = #{account_pwd}
+	    WHERE USER_ID = #{account_id}
+	</update>
+	
+	<update id="updateAdminPwd">
+	    UPDATE ADMIN_INFO
+	    SET ADMIN_PWD = #{account_pwd}
+	    WHERE ADMIN_ID = #{account_id}
+	</update>
+		
+
+</mapper>
+

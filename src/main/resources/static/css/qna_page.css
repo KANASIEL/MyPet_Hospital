@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+/* ========================================================================= */
+/* 🧩 공통 스타일 및 레이아웃 */
+/* ========================================================================= */
+
+/* 전체 레이아웃 (main 태그) */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    /* 추가: FAQ 테이블과의 상하 여백 확보 */
+    margin-top: 40px;
+}
+
+/* Q&A 섹션 제목 */
+.qna_title {
+    width: 80%;
+    margin: 20px auto 30px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d47a1;
+    padding-bottom: 10px;
+}
+
+/* ========================================================================= */
+/* ❓ 자주 묻는 질문 (FAQ) 영역 스타일 */
+/* ========================================================================= */
+
+/* FAQ 영역 전체 컨테이너 (HTML의 div align="center" 부분) */
+div[align="center"] {
+    padding: 20px 0;
+    width: 80%; /* QNA 리스트와 너비 통일 */
+    margin: 0 auto;
+}
+
+/* FAQ 테이블 스타일 (HTML에서 details를 감싸는 테이블) */
+div[align="center"] table {
+    width: 100%;
+    border-collapse: separate; /* details 간의 간격 허용 */
+    border-spacing: 15px 15px; /* details 요소 간의 간격 */
+}
+
+/* FAQ 테이블 셀 스타일 */
+div[align="center"] table td {
+    padding: 0; /* 기본 패딩 제거 */
+    vertical-align: top; /* 내용이 위쪽에서 시작하도록 */
+}
+
+/* 개별 FAQ 토글 (details) 스타일 */
+details {
+    position: relative;
+    width: 100%; /* 테이블 셀 너비에 맞춤 */
+    min-width: 250px; /* 너무 줄어드는 것 방지 */
+}
+
+/* summary 스타일 (질문 제목) */
+details summary {
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none; /* 기본 마커 제거 */
+    transition: background-color 0.2s;
+}
+
+details summary:hover {
+    background-color: #1976D2;
+}
+
+/* details 토글 시의 답변 내용 (p) 스타일 */
+details[open] p {
+    position: absolute;
+    /* top: 100% 대신, summary 높이 + 약간의 여백으로 조정 */
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* HTML에서 중복 사용된 ID를 클래스로 변경하여 스타일 적용 (det, sum, p ID 사용 방지) */
+/* HTML에 ID 대신 class를 적용해야 하지만, 현재 CSS에서는 기존 ID 선택자 제거 */
+
+
+/* ========================================================================= */
+/* 📝 QNA 리스트 영역 스타일 */
+/* ========================================================================= */
+
+/* 리스트를 감싸는 div */
+.div {
+    width: 80%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* QNA 리스트 테이블 */
+.table {
+    width: 100%; /* div에 맞게 100% */
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 테이블 헤더 */
+.table th {
+    background-color: #e3f2fd;
+    font-weight: bold;
+    color: #1976D2;
+    font-size: 1rem;
+    padding: 12px 16px;
+    border-bottom: 1px solid #bbdefb; /* 헤더 전용 구분선 */
+}
+
+/* 테이블 셀 (공통) */
+.table th, .table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e0e0;
+    word-wrap: break-word;
+    font-size: 0.95rem;
+    color: #333;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* 열 너비 지정 (ID 선택자 대신 TH/TD의 가상 클래스로 대체) */
+.table th:nth-child(1), .table td:nth-child(1) { /* 번호 */
+    width: 10%;
+}
+.table th:nth-child(2), .table td:nth-child(2) { /* 제목 */
+    width: 60%;
+    text-align: left; /* 제목은 왼쪽 정렬 */
+    padding-left: 20px;
+}
+.table th:nth-child(3), .table td:nth-child(3) { /* 답변여부 */
+    width: 15%;
+}
+.table th:nth-child(4), .table td:nth-child(4) { /* 작성일 */
+    width: 15%;
+}
+
+
+/* 제목 링크 스타일 */
+.table td.title a {
+    color: #333;
+    text-decoration: none;
+    display: block; /* 전체 셀을 링크 영역으로 활용 */
+}
+
+.table td.title a:hover {
+    color: #2196F3;
+    text-decoration: underline;
+}
+
+
+/* 행 hover 효과 */
+.table tr:not(.column):not(.button_tr):hover td {
+    background-color: #f5faff;
+}
+
+/* 글쓰기 버튼 행 */
+.table tr.button_tr td {
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    padding: 20px;
+    /* colspan="5"이지만, 4개 열만 존재하므로 4개 열 너비만큼 차지함 */
+}
+
+/* 버튼 스타일 */
+.button {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none; /* a 태그 기본 스타일 제거 */
+    display: inline-block;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1976D2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================================================= */
+/* 🔢 페이지네이션 스타일 (HTML에 없지만 CSS에 포함되어 있으므로 유지) */
+/* ========================================================================= */
+
+.pagination {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.page-btn {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.page-btn:hover {
+    background-color: #2196F3;
+    color: white;
+    border-color: #2196F3;
+}
+
+.page-btn.active {
+    background-color: #1976D2;
+    color: white;
+    border-color: #1976D2;
+    font-weight: bold;
+}
+
+/* =======================================
+   Pagination Area (페이지네이션)
+   ======================================= */
+
+/* 페이지네이션 컨테이너 */
+.pagination-container {
+    /* 전체 테이블 영역 중앙에 배치 */
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center;
+    margin-top: 30px; /* 테이블과의 상단 여백 */
+    padding: 10px 0;
+}
+
+/* 페이지 번호 리스트 */
+.pagination-list {
+    display: flex;
+    list-style: none; /* 리스트 마커 제거 */
+    padding: 0;
+    margin: 0;
+    gap: 4px; /* 항목 간 간격 */
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 개별 페이지 항목 (li) */
+.pagination-item {
+    /* 기본 설정 */
+    display: list-item;
+    line-height: 1; /* 링크 높이에 맞춤 */
+}
+
+/* 페이지 링크 (a) */
+.pagination-link {
+    display: block;
+    padding: 8px 12px;
+    min-width: 30px; /* 최소 너비 확보 */
+    text-align: center;
+    color: #555;
+    background-color: #ffffff;
+    border: 1px solid #e9ecef; /* 연한 테두리 */
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+/* Hover 및 Focus 효과 */
+.pagination-link:hover,
+.pagination-link:focus {
+    background-color: #f0f3f5;
+    color: #333;
+    border-color: #ccc;
+}
+
+/* 활성화된 페이지 번호 (.active 클래스가 li에 붙는 경우) */
+.pagination-item.active .pagination-link {
+    background-color: #4a90e2; /* 기존 CSS의 활성화 색상 */
+    color: white;
+    border-color: #4a90e2;
+    font-weight: bold;
+    pointer-events: none; /* 클릭 비활성화 (선택 사항) */
+}
+
+/* 이전/다음 버튼 스타일 */
+.pagination-item.prev .pagination-link,
+.pagination-item.next .pagination-link {
+    font-weight: bold;
+    color: #333;
+    padding: 8px 15px; /* 좌우 패딩을 더 넓게 */
+}
+
+/* 이전/다음 버튼: 비활성화 상태 (JSTL로 c:if 조건이 false일 때) */
+.pagination-item.disabled .pagination-link {
+    color: #adb5bd;
+    cursor: not-allowed;
+    background-color: #f8f9fa;
+    border-color: #e9ecef;
+}

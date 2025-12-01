@@ -1,0 +1,190 @@
+header {
+    display: block !important;
+    position: relative !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 9999 !important;
+}
+
+
+/* =========================================
+   추가 정보 입력 폼 (register_social.jsp)
+   ========================================= */
+
+/* 로그인 컨테이너 기본 스타일 (register_social 전용) */
+.login-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.login-container .input-group {
+    margin-bottom: 20px;
+}
+
+/* 모든 input 태그의 일관성 유지 (text, tel, date 등) */
+.login-container .input-group input[type="tel"],
+.login-container .input-group input[type="date"],
+.login-container .input-group input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+}
+
+/* input 포커스 시 스타일 */
+.login-container .input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+
+/* 라벨 스타일 (생년월일, 성별) */
+.login-container .input-group label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+/* 🔻🔻🔻 [수정] Flatpickr를 위해 기본 달력 아이콘 숨기기 🔻🔻🔻 */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/* 생년월일 input 스타일 (flatpickr 적용) */
+.input-group input[type="date"] {
+    position: relative;
+    background-color: white; /* flatpickr가 적용될 때 배경색 강제 */
+    cursor: pointer;
+}
+
+/* 🔺🔺🔺 여기까지 🔺🔺🔺 */
+
+
+/* 성별 그룹 스타일링 */
+.input-group.gender-group {
+    text-align: left;
+    padding: 10px 15px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+}
+
+.gender-group > div { 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* 성별 라디오 버튼과 라벨 정렬 */
+.gender-group input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    vertical-align: middle;
+    appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+.gender-group input[type="radio"]:checked {
+    border-color: #007bff;
+    background-color: #007bff;
+}
+.gender-group input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gender-group label[for="male"],
+.gender-group label[for="female"] {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #555;
+    cursor: pointer;
+    flex-grow: 1;
+    line-height: 18px;
+}
+
+
+/* 주소 그룹 (우편번호 + 주소 검색 버튼) */
+.input-group.address-group {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+/* 주소 검색 버튼 */
+.address-group .addr-btn {
+    flex-shrink: 0;
+    padding: 12px 18px;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: white;
+    background-color: #595959;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    height: 44px;
+    box-sizing: border-box;
+}
+.address-group .addr-btn:hover {
+    background-color: #333;
+}
+
+
+/* '가입 완료' 버튼 */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
