@@ -15,7 +15,7 @@
 채교준:  
 김주현:  
 
-#### 개발환경  
+### 개발환경  
 - 'Language: Java 17'  
 - 'IDE: STS, IntelliJ IDEA, VS Code'  
 - 'Framework: Spring Boot 2.x'  
