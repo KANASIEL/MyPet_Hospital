@@ -116,17 +116,17 @@ Google Gemini API를 활용한 실시간 챗봇으로, 반려동물 건강·영�
 
 ## 🐞 이슈 발생 및 해결
 
-### 📌 이슈 개요
+#### 📌 이슈 개요
 - **발생 상황**: GitHub Pull Request 병합 과정
 - **관련 브랜치**: `feature/*` → `develop`
 - **증상**: 동일 파일 동시 수정으로 Merge Conflict 발생
 
-### 🔍 원인 분석
+#### 🔍 원인 분석
 - 동일 파일·동일 라인을 여러 명이 수정
 - 최신 `develop` 미반영 상태에서 작업
 - 작업 범위 공유 부족
 
-### 🛠 해결 방법
+#### 🛠 해결 방법
 - 최신 브랜치 반영
   ```bash
   git pull origin develop
