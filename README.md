@@ -130,3 +130,12 @@ Google Gemini API를 활용한 실시간 챗봇으로, 반려동물 건강·영�
 - 🔃 최신 브랜치 반영
   ```bash
   git pull origin develop
+
+## 📊 프로젝트 성과
+
+- 👥 6인 팀 프로젝트로 기획·개발·협업 전 과정 경험
+- 🔐 소셜 로그인 및 통합 회원 시스템 안정적 구현
+- 🤖 외부 AI API(Gemini) 연동 경험 확보
+- 🗄 Oracle 기반 실서비스 수준 DB 설계 및 운영 경험
+- 🔄 Git 협업 및 Merge Conflict 해결 경험 축적
+
