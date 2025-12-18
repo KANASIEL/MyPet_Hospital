@@ -17,27 +17,27 @@
 
 | 이름   | 역할                                                                                           | GitHub |
 |--------|------------------------------------------------------------------------------------------------|--------|
-| 이현석 | 👑 **팀장** · 스프링 부트 포팅, 백엔드 구조 분리, 이미지 첨부, 서머노트 이미지·동영상 미리보기 기능 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/leehyeonseok-NightTraveler) |
+| 이현석 | **팀장** · 스프링 부트 포팅, 백엔드 구조 분리, 이미지 첨부, 서머노트 이미지·동영상 미리보기 기능 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/leehyeonseok-NightTraveler) |
 | 정태규 | 🗄 **DB 설계·구현(멤버십 자동관리)**, 마이페이지, 관리자 페이지(예약 관리), Q&A 기능 강화             | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/KANASIEL) |
-| 김주현 | 🔐 소셜 로그인 구현, 회원정보 추가 페이지, 통합 회원가입 DB 연동(공동), 📈 반려동물 몸무게 기록·그래프 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/jh0317) |
-| 김지호 | 🔐 소셜 로그인 구현, 회원정보 추가 페이지, 통합 회원가입 DB 연동(공동)                           | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/jiho6670) |
-| 채교준 | 🤖 DB 설계·구현, Gemini 기반 챗봇, ⚖ 반려동물 비만도 계산기                                          | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/lumineon213) |
-| 구현서 | 📧 이메일 인증 아이디·비밀번호 찾기, 🔍 검색 자동완성, ✍ 자유게시판 CRUD 및 댓글 기능                    | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/guhyeonseo) |
+| 김주현 | 소셜 로그인 구현, 회원정보 추가 페이지, 통합 회원가입 DB 연동(공동), 📈 반려동물 몸무게 기록·그래프 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/jh0317) |
+| 김지호 | 소셜 로그인 구현, 회원정보 추가 페이지, 통합 회원가입 DB 연동(공동)                           | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/jiho6670) |
+| 채교준 | DB 설계·구현, Gemini 기반 챗봇, ⚖ 반려동물 비만도 계산기                                          | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/lumineon213) |
+| 구현서 | 이메일 인증 아이디·비밀번호 찾기, 🔍 검색 자동완성, ✍ 자유게시판 CRUD 및 댓글 기능                    | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/guhyeonseo) |
 
 
 ## 🛠 기술 스택
 
-| 카테고리 | 기술 |
-|---------|------|
-| 🖥 운영체제 | Windows 11 |
-| 💻 언어 | Java |
-| 🎨 프론트엔드 | JSP, JavaScrip, jQuery, CSS |
-| ⚙ 백엔드 프레임워크 | Spring Boot |
-| 🧩 ORM / DB 접근 | MyBatis |
-| 🗄 데이터베이스 | Oracle |
-| 🔐 인증 / 보안 | Spring Security, Kakao, Google, Naver |
-| 🤖 AI / 외부 API | Google Gemini |
-| 🧰 개발 도구 / IDE | IntelliJ, STS, VS Code |
+| 카테고리          | 기술 |
+|-------------------|------|
+| 운영체제 | ![Windows 11](https://img.shields.io/badge/Windows%2011-0078D6?style=flat&logo=windows11&logoColor=white) |
+| 언어 | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)&nbsp;![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) |
+| 프론트엔드 | ![JSP](https://img.shields.io/badge/JSP-000000?style=flat&logo=java&logoColor=white)&nbsp;![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white)&nbsp;![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white) |
+| 백엔드 프레임워크 | ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat&logo=springboot&logoColor=white) |
+| ORM / 데이터 접근 | ![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=flat&logo=mybatis&logoColor=white) |
+| 데이터베이스 | ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white) |
+| 인증 / 보안 | ![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat&logo=springsecurity&logoColor=white)&nbsp;![Kakao](https://img.shields.io/badge/Kakao-FFCD00?style=flat&logo=kakaotalk&logoColor=black)&nbsp;![Google](https://img.shields.io/badge/Google-EA4335?style=flat&logo=google&logoColor=white)&nbsp;![Naver](https://img.shields.io/badge/Naver-03C75A?style=flat&logo=naver&logoColor=white) |
+| AI / 외부 API | ![Google Gemini](https://img.shields.io/badge/Google%20Gemini-886FBF?style=flat&logo=googlegemini&logoColor=white) |
+| 개발 도구 / IDE | ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=flat&logo=intellijidea&logoColor=white)&nbsp;![STS](https://img.shields.io/badge/Spring%20Tool%20Suite-6DB33F?style=flat&logo=spring&logoColor=white)&nbsp;![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white) |
 
 ## 🔄 서비스 이용 흐름  
 
@@ -117,25 +117,31 @@ Google Gemini API를 활용한 실시간 챗봇으로, 반려동물 건강·영�
 ## 🐞 이슈 발생 및 해결
 
 ### 📌 이슈 개요
-- 🚨 **발생 상황**: GitHub Pull Request 병합 과정
-- 🌿 **관련 브랜치**: `feature/*` → `develop`
-- ❗ **증상**: 동일 파일 동시 수정으로 Merge Conflict 발생
+- **발생 상황**: GitHub Pull Request 병합 과정
+- **관련 브랜치**: `feature/*` → `develop`
+- **증상**: 동일 파일 동시 수정으로 Merge Conflict 발생
 
 ### 🔍 원인 분석
-- 🧑‍💻 동일 파일·동일 라인을 여러 명이 수정
-- 🔄 최신 `develop` 미반영 상태에서 작업
-- 🗣 작업 범위 공유 부족
+- 동일 파일·동일 라인을 여러 명이 수정
+- 최신 `develop` 미반영 상태에서 작업
+- 작업 범위 공유 부족
 
 ### 🛠 해결 방법
-- 🔃 최신 브랜치 반영
+- 최신 브랜치 반영
   ```bash
   git pull origin develop
 
 ## 📊 프로젝트 성과
 
-- 👥 6인 팀 프로젝트로 기획·개발·협업 전 과정 경험
-- 🔐 소셜 로그인 및 통합 회원 시스템 안정적 구현
-- 🤖 외부 AI API(Gemini) 연동 경험 확보
-- 🗄 Oracle 기반 실서비스 수준 DB 설계 및 운영 경험
-- 🔄 Git 협업 및 Merge Conflict 해결 경험 축적
+- 6인 팀 프로젝트로 기획·개발·협업 전 과정 경험
+- 소셜 로그인 및 통합 회원 시스템 안정적 구현
+- 외부 AI API(Gemini) 연동 경험 확보
+- Oracle 기반 실서비스 수준 DB 설계 및 운영 경험
+- Git 협업 및 Merge Conflict 해결 경험 축적
 
+## 🚀 개선 과제 및 향후 계획
+
+- 모바일 반응형 UI 고도화
+- 예약 알림(문자·푸시) 기능 추가
+- 관리자 통계 대시보드 제공
+- AI 상담 답변 품질 개선 및 로그 분석
