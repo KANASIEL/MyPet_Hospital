@@ -13,16 +13,16 @@
 ### 개발 기간
 25.10.13 ~ 10.20 / 25.11.13 ~ 25.11.20
 
-### 팀원 및 역할
+### 팀원 및 역할 👥
 
-| 이름   | 역할                          | GitHub                                                                 |
-|--------|-------------------------------|------------------------------------------------------------------------|
-| 이현석 | [팀장] 스프링 레거시 환경 스프링 부트로 포팅, 기존 통합 구조 백엔드 코드를 분리, 이미지 첨부, 서머노트를 활용한 이미지·동영상 미리보기 삽입 기능 구현 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/leehyeonseok-NightTraveler) |
-| 정태규 | DB설계및 구현(멤버쉽 자동관리), 마이페이지, 관리자페이지(예약 관리 등), Q&A페이지 기능강화 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/KANASIEL) |
-| 김주현 | 구글, 카카오, 네이버 소셜 로그인 구현, 회원정보 추가 페이지 개발, 통합 회원가입 DB 연동 구축, 펫 몸무게 기록 그래프 시각화 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/jh0317) |
-| 김지호 | 구글, 카카오, 네이버 소셜 로그인 구현, 회원정보 추가 페이지 개발, 통합 회원가입 DB 연동 구축 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/jiho6670) |
-| 채교준 | DB설계및 구현, 사용자 편의를 위한 챗봇 기능, 반려동물 비만도 계산기 구현 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/lumineon213) |
-| 구현서 | 이메일 인증 기반의 아이디·비밀번호 찾기 기능, 검색 자동완성 기능을 구현, 자유 게시판 댓글 기능과 게시글 업로드·조회·수정(CRUD) 기능 구현 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/guhyeonseo) |
+| 이름   | 역할                                                                                           | GitHub                                                                                                                                   |
+|--------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| 이현석 | [팀장] 스프링 부트 포팅, 백엔드 구조 분리, 이미지 첨부, 서머노트 이미지·동영상 미리보기 기능 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/leehyeonseok-NightTraveler) |
+| 정태규 | DB 설계·구현(멤버십 자동관리), 마이페이지, 관리자 페이지(예약 관리), Q&A 기능 강화             | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/KANASIEL)                  |
+| 김주현 | 소셜 로그인 구현, 회원정보 추가 페이지, 통합 회원가입 DB 연동 (공동), 반려동물 몸무게 기록및 그래프 시각화 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/jh0317)                     |
+| 김지호 | 소셜 로그인 구현, 회원정보 추가 페이지, 통합 회원가입 DB 연동 (공동)                           | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/jiho6670)                    |
+| 채교준 | DB 설계·구현, Gemini 기반 챗봇, 반려동물 비만도 계산기                                          | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/lumineon213)                 |
+| 구현서 | 이메일 인증 아이디·비밀번호 찾기, 검색 자동완성, 자유게시판 CRUD 및 댓글 기능                    | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/guhyeonseo)                  |
 
 ## 기술 스택 🛠️
 
