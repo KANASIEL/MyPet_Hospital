@@ -18,11 +18,11 @@
 | 이름   | 역할                                                                                           | GitHub |
 |--------|------------------------------------------------------------------------------------------------|--------|
 | 이현석 | **팀장** · 스프링 부트 포팅, 백엔드 구조 분리, 이미지 첨부, 서머노트 이미지·동영상 미리보기 기능 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/leehyeonseok-NightTraveler) |
-| 정태규 | DB 설계·구현(멤버십 자동관리), 마이페이지, 관리자 페이지(예약 관리), Q&A 기능 강화             | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/KANASIEL) |
+| 정태규 | DB 설계·구현(멤버십 자동관리), 마이페이지, 관리자 페이지(예약 관리), Q&A 기능 강화 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/KANASIEL) |
 | 김주현 | 소셜 로그인 구현, 회원정보 추가 페이지, 통합 회원가입 DB 연동(공동), 반려동물 몸무게 기록·그래프 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/jh0317) |
-| 김지호 | 소셜 로그인 구현, 회원정보 추가 페이지, 통합 회원가입 DB 연동(공동)                           | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/jiho6670) |
-| 채교준 | DB 설계·구현, Gemini 기반 챗봇, ⚖ 반려동물 비만도 계산기                                          | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/lumineon213) |
-| 구현서 | 이메일 인증 아이디·비밀번호 찾기, 검색 자동완성, 자유게시판 CRUD 및 댓글 기능                    | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/guhyeonseo) |
+| 김지호 | 소셜 로그인 구현, 회원정보 추가 페이지, 통합 회원가입 DB 연동(공동) | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/jiho6670) |
+| 채교준 | DB 설계·구현, Gemini 기반 챗봇, ⚖ 반려동물 비만도 계산기  | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/lumineon213) |
+| 구현서 | 이메일 인증 아이디·비밀번호 찾기, 검색 자동완성, 자유게시판 CRUD 및 댓글 기능 | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=flat&logo=github&logoColor=white)](https://github.com/guhyeonseo) |
 
 
 ## 🛠 기술 스택
